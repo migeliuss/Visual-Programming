@@ -15,6 +15,9 @@ header, footer {
     text-align: center;
     padding: 1rem;
 }
+footer{
+    height: 200px;
+}
 header img {
     max-width: 100%;
     height: auto;
@@ -33,6 +36,10 @@ h3{
     padding-inline: 10%;
     padding-bottom: 5vh;
     font-size: 4vh;
+}
+a{
+    margin-left: auto;
+    margin-right: auto;
 }
 .container {
     display: flex;
@@ -53,6 +60,24 @@ h3{
 .image-text p {
     flex: 1;
 }
+button{
+    padding: 3vh;
+    font-size: 4vh;
+    justify-content: center;
+}
+.s{
+    align-items: center;
+    justify-self: center;
+    padding: 5vh;
+}
+.mini-block{
+    display: flex;
+    flex-direction: column;
+}
+a{
+    padding-top: 3vh;
+}
+
 @media (max-width: 768px) {
     .image-text {
         flex-direction: column;

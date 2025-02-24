@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    gap: 2vh;
+}
+
+.container > div {
+    background-color: rgb(73, 73, 217);
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        height: 100vh;
+    }
+}
+
+@media (max-width: 767px) and (orientation: portrait) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        height: fit-content;
+        padding: 10vh 10px;
+    }
+}
+
+@media (max-width: 767px) and (orientation: landscape) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        height: 160vh;
+        padding: 10px 10vh;
+    }
+}
